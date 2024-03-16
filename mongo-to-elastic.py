@@ -45,7 +45,7 @@ class MongoElastic:
         mongodb_fields = dict() if not mongodb_fields else mongodb_fields
 
         database = self.mongodb_client["IR"]
-        collection = database["cleaned_recipe"]
+        collection = database["recipes"]
 
         no_docs = 0
         offset = 0
