@@ -31,7 +31,8 @@ class MongoElastic:
             _id = doc["_id"]
             del doc["_id"]
             action = {
-                "_index": 'recipe',
+                "_index": 'suggestion',
+                "_doc": doc,
                 "_id": _id,
                 "_source": doc
             }
